@@ -3,4 +3,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+  background-color: black;
+  color: aliceblue;
 }/*# sourceMappingURL=main.css.map */
