@@ -5,8 +5,150 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
-h1 {
-  font-size: 64px;
-  background-color: black;
-  color: aliceblue;
+/*100;200;300;400;500;600*/
+/*#F7C324 hover color*/
+header {
+  background-image: url("../img/background-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  padding: 60px;
+  border-bottom: 1px solid hsla(0, 5%, 70%, 0.5);
+}
+header nav .logo {
+  height: 40px;
+  padding-top: 20px;
+}
+header nav .logo img {
+  width: 80px;
+}
+header nav .menu ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+header nav .menu li {
+  padding: 5px;
+}
+header nav .menu a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  color: #fff;
+}
+header nav .menu a:hover {
+  color: #f7c324;
+}
+header nav .menu #f-link-gold {
+  color: #f7c324;
+}
+header nav .btn-menu {
+  padding: 10px;
+  margin-right: 35px;
+}
+header nav .btn-menu button {
+  width: 150%;
+  border-radius: 35px;
+  border-style: none;
+}
+header nav .btn-menu button a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  padding: 8px;
+}
+header .header-bottom {
+  min-height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+header .header-bottom .header-bottom-left-side {
+  border: 1px solid blue;
+  padding: 40px;
+  position: relative;
+}
+header .header-bottom .header-bottom-left-side .left-side-top {
+  padding: 100px;
+}
+header .header-bottom .header-bottom-left-side .left-side-top .banner-top {
+  border-radius: 35px;
+  background-color: #774bd0;
+  color: #fff;
+  margin-bottom: -1px;
+}
+header .header-bottom .header-bottom-left-side .left-side-top .banner-top #banner-top-left {
+  margin-left: 15px;
+}
+header .header-bottom .header-bottom-left-side .left-side-top .banner-top a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  background-color: #f7c324;
+  transition: all 0.4s ease;
+  border-radius: 0 35px 35px 0;
+}
+header .header-bottom .header-bottom-left-side .left-side-top .banner-top a:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+header .header-bottom .header-bottom-left-side .left-side-middle {
+  width: 420px;
+  margin-left: 100px;
+  margin-top: -150px;
+}
+header .header-bottom .header-bottom-left-side .left-side-middle h1 {
+  color: #fff;
+  font-size: 96px;
+  line-height: 70px;
+  font-weight: 700;
+  letter-spacing: -0.09em;
+}
+header .header-bottom .header-bottom-left-side .left-side-middle h1 span {
+  background-color: #f7c324;
+  color: #343a40;
+}
+header .header-bottom .header-bottom-left-side .left-side-bottom {
+  width: 200px;
+  margin-left: 200px;
+  margin-top: -40px;
+  text-align: center;
+  border-radius: 35px;
+  background-color: #f7c324;
+}
+header .header-bottom .header-bottom-left-side .left-side-bottom a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+header .header-bottom .header-bottom-left-side .left-side-bottom a:hover {
+  display: block;
+  border-radius: 35px;
+  background-color: #343a40;
+  color: #fff;
+}
+header .header-bottom .header-bottom-right-side {
+  border: 1px solid blueviolet;
+  width: 50%;
+  border: 1px solid red;
+}
+header .header-bottom .header-bottom-right-side .right-side-img {
+  position: relative;
+}
+header .header-bottom .header-bottom-right-side .right-side-img img {
+  position: absolute;
+  right: 200px;
 }/*# sourceMappingURL=main.css.map */

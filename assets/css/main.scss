@@ -4,8 +4,164 @@ body {
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
 }
-h1 {
-  font-size: 64px;
-  background-color: black;
-  color: aliceblue;
+/*100;200;300;400;500;600*/
+/*#F7C324 hover color*/
+header {
+  background-image: url("../img/background-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding: 60px;
+    border-bottom: 1px solid hsla(0, 5%, 70%, 0.5);
+    .logo {
+      height: 40px;
+      padding-top: 20px;
+      img {
+        width: 80px;
+      }
+    }
+    .menu {
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+      }
+      li {
+        padding: 5px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        transition: all 0.4s ease;
+        color: #fff;
+      }
+      a:hover {
+        color: #f7c324;
+      }
+      #f-link-gold {
+        color: #f7c324;
+      }
+    }
+    .btn-menu {
+      padding: 10px;
+      margin-right: 35px;
+      button {
+        width: 150%;
+        border-radius: 35px;
+        border-style: none;
+        a {
+          text-decoration: none;
+          display: inline-block;
+          font-size: 15px;
+          font-weight: 600;
+          color: black;
+          padding: 8px;
+        }
+      }
+    }
+  }
+  .header-bottom {
+    min-height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    .header-bottom-left-side {
+      border: 1px solid blue;
+      padding: 40px;
+      position: relative;
+      .left-side-top {
+        padding: 100px;
+        .banner-top {
+          border-radius: 35px;
+          background-color: #774bd0;
+          color: #fff;
+          margin-bottom: -1px;
+          #banner-top-left {
+            margin-left: 15px;
+          }
+          a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            color: black;
+            background-color: #f7c324;
+            transition: all 0.4s ease;
+            border-radius: 0 35px 35px 0;
+          }
+          a:hover {
+            background-color: #343a40;
+            color: #fff;
+          }
+        }
+      }
+      .left-side-middle {
+        width: 420px;
+        margin-left: 100px;
+        margin-top: -150px;
+        h1 {
+          color: #fff;
+          font-size: 96px;
+          line-height: 70px;
+          font-weight: 700;
+          letter-spacing: -0.09em;
+          span {
+            background-color: #f7c324;
+            color: #343a40;
+          }
+        }
+      }
+      .left-side-bottom {
+        width: 200px;
+        margin-left: 200px;
+        margin-top: -40px;
+        text-align: center;
+        border-radius: 35px;
+        background-color: #f7c324;
+        a {
+          display: block;
+          padding: 20px;
+          text-decoration: none;
+          color: black;
+          font-size: 18px;
+          font-weight: 500;
+          transition: all 0.4s ease;
+        }
+        a:hover {
+          display: block;
+          border-radius: 35px;
+          background-color: #343a40;
+          color: #fff;
+        }
+      }
+    }
+    .header-bottom-right-side {
+      border: 1px solid blueviolet;
+      width: 50%;
+      border: 1px solid red;
+      .right-side-img {
+        position: relative;
+        img {
+          position: absolute;
+          right: 200px;
+          // animation-fill-mode: both;
+          // animation-name: shapeRotate;
+          // animation-timing-function: linear;
+          // animation-duration: 3s;
+          // animation-iteration-count: infinite;
+          // transform-origin: center center;
+        }
+        // @keyframes shapeRotate {
+        //   0%,
+        //   100% {
+        //     transform: translateY(0px);
+        //   }
+        // }
+      }
+    }
+  }
 }
