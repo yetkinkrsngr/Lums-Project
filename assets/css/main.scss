@@ -10,7 +10,8 @@ header {
   background-image: url("../img/background-banner.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  height: 105rem;
+  z-index: 2;
   nav {
     display: flex;
     justify-content: space-between;
@@ -47,33 +48,38 @@ header {
         color: #f7c324;
       }
     }
+    /*This is kind a bug :S */
     .btn-menu {
-      padding: 10px;
-      margin-right: 35px;
-      button {
-        width: 150%;
+      text-align: center;
+      a {
+        display: block;
+        width: 100px;
+        background-color: #fff;
+        height: 20px;
+        padding: 10px;
+        line-height: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
         border-radius: 35px;
-        border-style: none;
-        a {
-          text-decoration: none;
-          display: inline-block;
-          font-size: 15px;
-          font-weight: 600;
-          color: black;
-          padding: 8px;
-        }
+        margin-left: 150px;
+      }
+      a:hover {
+        background-color: #343a40;
+        color: #fff;
+        transition: 1s;
       }
     }
   }
   .header-bottom {
-    min-height: 100vh;
-    border: 1px solid red;
+    margin-top: 10%;
     display: flex;
     justify-content: space-between;
     .header-bottom-left-side {
-      border: 1px solid blue;
       padding: 40px;
       position: relative;
+      left: 100px;
       .left-side-top {
         padding: 100px;
         .banner-top {
@@ -140,27 +146,125 @@ header {
       }
     }
     .header-bottom-right-side {
-      border: 1px solid blueviolet;
       width: 50%;
-      border: 1px solid red;
       .right-side-img {
         position: relative;
-        img {
+
+        .computer-in-header {
           position: absolute;
+          height: 800px;
           right: 200px;
-          // animation-fill-mode: both;
-          // animation-name: shapeRotate;
-          // animation-timing-function: linear;
-          // animation-duration: 3s;
-          // animation-iteration-count: infinite;
-          // transform-origin: center center;
+          animation-name: my-animation;
+          animation-duration: 5s;
+          animation-direction: alternate;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
         }
-        // @keyframes shapeRotate {
-        //   0%,
-        //   100% {
-        //     transform: translateY(0px);
-        //   }
-        // }
+        @keyframes my-animation {
+          from {
+            top: 10px;
+          }
+          to {
+            top: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+.circle {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  left: 65%;
+  top: -450px;
+  border-radius: 50%;
+  outline: 100px #f7c324 solid;
+  z-index: -1;
+  animation-name: my-animation-2;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  @keyframes my-animation-2 {
+    from {
+      top: -400px;
+    }
+    to {
+      top: -450px;
+    }
+  }
+}
+.section-control {
+  border: 1px solid red;
+  margin-top: -650px;
+  text-align: center;
+  .card-info {
+    padding: 40px;
+    h1 {
+      width: 700px;
+      font-size: 72px;
+      font-weight: 800;
+      color: #343a40;
+      line-height: 70px;
+      margin-left: 30%;
+    }
+  }
+  .card-side {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    .crd-card {
+      height: 450px;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid yellowgreen;
+      text-align: center;
+      .service-icon {
+        width: 100px;
+        height: 100px;
+        background-image: linear-gradient(
+          90deg,
+          #5128c4 0%,
+          #7541d1 50%,
+          #b16aeb 100%
+        );
+        border-radius: 50%;
+        margin-left: 42%;
+        i {
+          font-size: 56px;
+          margin-top: 45px;
+        }
+      }
+      h3 {
+        font-size: 26px;
+        width: 120px;
+        margin-left: 40%;
+
+        a {
+          text-decoration: none;
+          color: #343a40;
+        }
+      }
+      .card-txt {
+        padding: 0 50px;
+        line-height: 50px;
+      }
+      .card-bottom {
+        border: 1px solid rgb(235, 201, 201);
+        a {
+          display: block;
+          text-decoration: none;
+          color: #343a40;
+          font-size: 16px;
+          font-weight: 800;
+          padding: 10px;
+        }
+        a:hover {
+          background-color: #f7c324;
+          transition: 1s;
+        }
       }
     }
   }
